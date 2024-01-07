@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>YATIRIMCI PROFİLİ TESTİ</title>
+        <link rel="stylesheet" href="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\main.css"></link>
+        <script src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\js\main.js"></script>
+    </head>
+
+    <body>
+        <div class="header"> <!--Başlangıç Kısmı-->
+            <video style="margin: 0%;padding: 0%; top: 0; left: 0; height: fit-content; width: fit-content;" autoplay loop muted><source src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\video.mp4"></video>
+            <img id="logo" src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\logo.png"> <!--Logo-->
+            <a href="AnaSayfa.html">ANASAYFA</a>
+            <a style="font-size: 25px;" href="yatirimciTesti.html">YATIRIMCI TESTİ</a>
+            <a href="Haberler.html">HABERLER</a>
+            <a href="Hakkımızda.html">HAKKIMIZDA</a>
+            <a href="HalkaArz.html">HALKA ARZ</a>
+            <a href="iletisim.html">İLETİŞİM</a>
+            <a href="FinAi.html">FiNAİ</a>
+            <a href="..\en\InvestorTest.html">TR</a>
+          </div>
+
+        <div class="form">
+            <p>1. Yatırım Hedefi</p><br>
+            <select name="yatırım Hedefi" id="1.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Kısa vadeli büyüme sağlamak</option>
+                <option value="2">Orta vadeli büyüme sağlamak</option>
+                <option value="3">Uzun vadeli büyüme sağlamak</option>
+            </select><br>
+
+            <p>2.Risk Toleransı</p><br>
+            <select name="risk Toleransı" class="formelemanlari" id="2.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Yüksek riskli, dalgalı gelirli yatırımlar</option>
+                <option value="2">Orta riskli, değişebilen gelirli yatırımlar</option>
+                <option value="3">Düşük riskli, sabit gelirli yatırımlar</option>
+            </select><br>
+
+            <p>3.Yatırım Bilgisi</p><br>
+            <select name="yatırım Bilgisi" class="formelemanlari" id="3.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Finansal bilgim yok</option>
+                <option value="2">Orta düzeyde finansal bilgiye sahibim</option>
+                <option value="3">Yüksek düzeyde finansal bilgiye sahibim</option>
+            </select><br>
+
+            <p>4.Likidite Tercihi</p><br>
+            <select name="likidite Tercihi" class="formelemanlari" id="4.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Yatırımlarımın hızlı bir şekilde nakite çevirilebilir olmasını tercih ederim</option>
+                <option value="2">Yatırımlarımın nakite çevrilmesi için biraz zaman geçmesi beni rahatsız etmez</option>
+                <option value="3">Yatırımlarımı nakite çevirmek için uzun bir süre beklemeyi tercih ederim</option>
+            </select><br>
+
+            <p>5.Portföy Çeşitliliği</p><br>
+            <select name="portföy Çeşitliliği" class="formelemanlari" id="5.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Yatırımlarım genellikle tek bir varlık sınıfında yoğunlaşır</option>
+                <option value="2">Yatırımlarım genellikle iki veya üç varlık sınıfında yoğunlaşır</option>
+                <option value="3">Yatırımlarım genellikle dört veya daha fazla varlık sınıfında yoğunlaşır</option>
+            </select><br>
+
+            <p>6.Sosyal ve Çevresel Faktörlerin Önemi</p><br>
+            <select name="sosyal ve Çevresel Faktörlerin Önemi" class="formelemanlari" id="6.soru">
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">Yatırımlarımın sadece finansal getirisi benim için önemli</option>
+                <option value="2">Yatırımlarımın finansal getirisi kadar sosyal ve çevresel getirisi de benim için önemli</option>
+                <option value="3">Yatırımlarımın finansal getirisinden çok sosyal ve çevresel getirisi benim için önemli</option>
+            </select>
+
+            <button type="button" onclick="hesapla()">Kaydet</button>
+            <p id="sonuc" style="color: #31304D;">SONUÇ: </p>
+            <br>
+            <br>
+        </div>
+
+        <div class="footer"> <!--Bitiş Kısmı-->
+            <p>© 2023 Tüm Hakları Saklıdır. | Tasarım: Zafer Emre KILINÇ</p>
+            <a href="hukuk\bildirim.html">Hukuki Bildirim</a> | 
+            <a href="hukuk\sorumluluk.html">Sorumluluk Reddi</a>
+          </div>
+    </body>
+</html>
