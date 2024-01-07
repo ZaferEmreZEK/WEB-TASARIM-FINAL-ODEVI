@@ -1,0 +1,47 @@
+<!--EN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>İLETİŞİM</title> <!--Sayfanın Başlığı-->
+  <meta charset="utf-8"> <!--Türkçe karakter desteği-->
+  <link rel="stylesheet"  href="..\..\css\main.css"> <!--CSS bağlantısı-->
+  <script src="..\..\js\main.js"></script>
+</head>
+
+<body>
+  <div class="header"> <!--Başlangıç Kısmı-->
+    <video style="margin: 0%;padding: 0%; top: 0; left: 0; height: fit-content; width: fit-content;" autoplay loop muted><source src="..\..\css\video.mp4"></video>  <img id="logo" src="..\..\css\logo.png"> <!--Logo-->
+    <a href="MainPage.html">MAINPAGE</a>
+    <a href="InvestorTest.html">INVESTOR TEST</a>
+    <a href="News.html">NEWS</a>
+    <a href="AboutUs.html">ABOUT US</a>
+    <a href="IPO.html">IPO</a>
+    <a style="font-size: 25px;" href="Contact.html">CONTACT</a>
+    <a href="FinAi.html">FiNAİ</a>
+    <a href="..\tr\iletisim.html">EN</a>
+  </div>
+
+  <div class="form">
+    <!--Bu bölümde kullanıcıların geri bildirim yapacağı kısım olacak-->
+    <h1>Contact</h1>
+    <form>
+        <p>Your Name: </p>
+        <input type="text" id="name" required>
+  
+        <p>Your Email Address: <input type="email" id="email" required></p>
+  
+        <p>Subject: <input type="text" id="konu" required></p>
+  
+        <p>Feedback: <textarea id="mesaj" rows="4" required></textarea></p>
+  
+        <button onclick="iletisimFormEn()" type="submit">Send</button>
+      </form>
+  </div>
+
+  <div class="footer"> <!--Bitiş Kısmı-->
+    <p>© 2023 All Rights Reserved. | Design: Zafer Emre KILINÇ </p>
+    <a href="hukuk\LegalNotice.html">Legal Notice</a> | 
+    <a href="hukuk\Disclaimer.html">Disclaimer</a>
+  </div>
+</body>
+</html>

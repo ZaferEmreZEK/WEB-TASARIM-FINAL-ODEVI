@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+    </style>
+  <title>AnaSayfa</title> <!--Sayfanın Başlığı-->
+  <meta charset="utf-8"> <!--Türkçe karakter desteği-->
+  <link rel="stylesheet"  href="..\..\css\main.css"> <!--CSS bağlantısı-->
+  <script src="..\..\js\main.js"></script>
+</head>
+
+<body onload="guncelKisi()">
+  <div class="header"> <!--Başlangıç Kısmı-->
+    <video style="margin: 0%;padding: 0%; top: 0; left: 0; height: fit-content; width: fit-content;" autoplay loop muted><source src="..\..\css\video.mp4"></video>  <img id="logo" src="..\..\css\logo.png"> <!--Logo-->
+    <a  href="AnaSayfa.html">ANASAYFA</a>
+    <a href="yatirimciTesti.html">YATIRIMCI TESTİ</a>
+    <a href="Haberler.html">HABERLER</a>
+    <a href="Hakkımızda.html">HAKKIMIZDA</a>
+    <a style="font-size: 25px;" href="HalkaArz.html">HALKA ARZ</a>
+    <a href="iletisim.html">İLETİŞİM</a>
+    <a href="FinAi.html">FiNAİ</a>
+    <a href="..\en\IPO.html">TR</a>
+  </div>
+
+  <div class="form">
+    <p>Güncel Katılımcı Sayısı: </p><p id="kisi" style="color: #161A30; background-color: #B6BBC4;background-attachment: fixed; font-family: Rubik Bubbles;">5984362</p>
+
+    <p>Gündemdeki HalkaArzlar</p><br>
+    <select name="HalkaArzlar" id="HalkaArzlar">
+      <option value="" disabled selected>Seçiniz</option>
+      <option value="1">Sur Tatil Evleri GYO</option>
+      <option value="2">Koç Holding</option>
+      <option value="3">Türk Telekom</option>
+      <option value="4">Türk Hava Yolları</option>
+    </select><br>
+    <button style="padding: 1px; text-align: center;" onclick="lotHesapla()">Hesapla</button>
+    <p id="sonuc">LOT SAYISI: </p>
+  </div>
+
+
+  <div class="footer"> <!--Bitiş Kısmı-->
+    <p>© 2023 Tüm Hakları Saklıdır. | Tasarım: Zafer Emre KILINÇ</p>
+    <a href="hukuk\bildirim.html">Hukuki Bildirim</a> | 
+    <a href="hukuk\sorumluluk.html">Sorumluluk Reddi</a>
+  </div>
+</body>
+</html>
