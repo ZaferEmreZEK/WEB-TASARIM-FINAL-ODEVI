@@ -1,0 +1,50 @@
+<!--EN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+    </style>
+  <title>IPO</title> <!--Sayfanın Başlığı-->
+  <meta charset="utf-8"> <!--Türkçe karakter desteği-->
+  <link rel="stylesheet"  href="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\main.css"> <!--CSS bağlantısı-->
+  <script src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\js\main.js"></script>
+</head>
+
+<body onload="guncelKisi()">
+  <div class="header"> <!--Başlangıç Kısmı-->
+    <video style="margin: 0%;padding: 0%; top: 0; left: 0; height: fit-content; width: fit-content;" autoplay loop muted><source src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\video.mp4"></video>
+    <img id="logo" src="C:\Users\ZaferEmre\Desktop\2.SINIF\AG_TABANLI\FinalOdev2\css\logo.png"> <!--Logo-->
+    <a href="MainPage.html">MAINPAGE</a>
+    <a href="InvestorTest.html">INVESTOR TEST</a>
+    <a href="News.html">NEWS</a>
+    <a href="AboutUs.html">ABOUT US</a>
+    <a style="font-size: 25px;" href="IPO.html">IPO</a>
+    <a href="Contact.html">CONTACT</a>
+    <a href="FinAi.html">FiNAİ</a>
+    <a href="..\tr\HalkaArz.html">EN</a>
+  </div>
+
+  <div class="form">
+    <p>Current Individual Investor Count: </p><p id="kisi" style="color: #161A30; background-color: #B6BBC4;background-attachment: fixed; font-family: Rubik Bubbles;">5984362</p>
+
+    <p>Upcoming IPOs</p><br>
+    <select name="HalkaArzlar" id="HalkaArzlar">
+      <option value="" disabled selected>Choose</option>
+      <option value="1">Sur Tatil Evleri GYO</option>
+      <option value="2">Koç Holding</option>
+      <option value="3">Türk Telekom</option>
+      <option value="4">Türk Hava Yolları</option>
+    </select><br>
+    <button style="padding: 1px; text-align: center;" onclick="lotHesaplaEn()">Calculate</button>
+    <p id="sonuc">LOT: </p>
+  </div>
+
+
+  <div class="footer"> <!--Bitiş Kısmı-->
+    <p>© 2023 All Rights Reserved. | Design: Zafer Emre KILINÇ </p>
+    <a href="hukuk\LegalNotice.html">Legal Notice</a> | 
+    <a href="hukuk\Disclaimer.html">Disclaimer</a>
+  </div>
+</body>
+</html>
